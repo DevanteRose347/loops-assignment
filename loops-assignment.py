@@ -41,10 +41,11 @@ print(alist)
 # Hint: There is an empty string at the end of the list you will need to account for.
 
 names_list = ['   amy', 'Briant', 'Ryan ', ' Alex', 'steve', '  ']
-#expected output = ['Amy', 'Alex']
+# expected output = ['Amy', 'Alex']
 for char in names_list:
-    if 'a' in char:
-        print(char.title().strip())
+    char = char.strip().title()
+    if char and char[0] == 'A':
+        print(char)
  
 # Exercise 5
 # Print all Prime numbers from 1 to 100
